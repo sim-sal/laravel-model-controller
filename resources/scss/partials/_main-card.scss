@@ -1,0 +1,19 @@
+#main {
+    .card {
+        border: 2px solid black;
+
+        .card_title {
+            background-color: rgb(161, 1, 1);
+            color: white;
+            max-width: max-content;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .movie-info {
+            background-color: lightgrey;
+            border-radius: 0 0 5px 5px;
+        }
+    }
+}

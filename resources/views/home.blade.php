@@ -4,7 +4,34 @@
     <main>
         <div id="main">
             <div class="container">
-                <h1>HELLO HOME!</h1>
+                <h1 class="text-center">BEST MOVIES IN THE WORLD</h1>
+                <div class="row justify-content-center my-5">
+                    @foreach ($movies as $movie)
+                        <div class="col-3 my-3 mx-2 text-center card">
+                            <span>{{ $movie->id }}</span>
+                            <hr>
+                            <h3 class="card_title">{{ $movie->title }}</h3>
+                            <div class="my-4">
+                                <h5>Original title:</h5>
+                                <span><strong>{{ $movie->original_title }}</strong></span>
+                            </div>
+                            <div class="row movie-info">
+                                <div class="col-4">
+                                    <h6>Nationality:</h6>
+                                    <span>{{ $movie->nationality }}</span>
+                                </div>
+                                <div class="col-4">
+                                    <h6>Exit date:</h6>
+                                    <span>{{ $movie->date }}</span>
+                                </div>
+                                <div class="col-4">
+                                    <h6>Vote:</h6>
+                                    <span>{{ $movie->vote }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
             </div>
         </div>
     </main>
