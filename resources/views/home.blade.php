@@ -8,7 +8,7 @@
                 <div class="row justify-content-center my-5">
                     @foreach ($movies as $movie)
                         <div class="col-3 my-3 mx-2 text-center card">
-                            <span>{{ $movie->id }}</span>
+                            <span class="text-start"><strong>{{ $movie->id }}</strong></span>
                             <hr>
                             <h3 class="card_title">{{ $movie->title }}</h3>
                             <div class="my-4">
