@@ -7,7 +7,7 @@
                 <h1 class="text-center">BEST MOVIES IN THE WORLD</h1>
                 <div class="row justify-content-center my-5">
                     @foreach ($movies as $movie)
-                        <div class="col-3 my-3 mx-2 text-center card">
+                        <div class="col-lg-3 col-md-4 my-3 mx-2 text-center card">
                             <span class="text-start"><span>id: </span><strong>{{ $movie->id }}</strong></span>
                             <hr>
                             <h3 class="card_title">{{ $movie->title }}</h3>
