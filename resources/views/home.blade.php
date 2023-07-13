@@ -20,7 +20,7 @@
                                     <h6>Nationality:</h6>
                                     <span>{{ $movie->nationality }}</span>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-4 exit-date">
                                     <h6>Exit date:</h6>
                                     <span>{{ $movie->date }}</span>
                                 </div>
